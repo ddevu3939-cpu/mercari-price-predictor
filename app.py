@@ -63,7 +63,7 @@ model, vectorizer, encoder = load_artifacts()
 st.title("🛒 Mercari Price Suggestion App")
 st.write("Enter product details below to get an estimated price prediction.")
 
-with st.form("prediction_form"):
+with st.form("my_unique_prediction_form"):
     item_name = st.text_input("Product Name", "Nike Air Max Running Shoes")
     brand_name = st.text_input("Brand Name", "Nike")
     category_name = st.selectbox("Category", ["Men/Shoes/Athletic", "Women/Athletic Apparel/Pants", "Electronics/Computers/Tablets", "Home/Kitchen/Dining"])
