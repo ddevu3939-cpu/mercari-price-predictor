@@ -7,11 +7,12 @@ from scipy.sparse import hstack
 
 @st.cache_resource
 def load_artifacts():
-   model = joblib.load('lgb_model.pkl')
-   return model
+    model = joblib.load('lgb_model.pkl')
+    vectorizer = joblib.load('tfidf_vectorizer.pkl')
+    encoder = joblib.load('encoder.pkl')
+    return model, vectorizer, encoder
 
-model = load_artifacts()
-
+model, vectorizer, encoder = load_artifacts()
 st.title("🛒 Mercari Price Suggestion App")
 st.write("Enter product details below to get an estimated price prediction.")
 
