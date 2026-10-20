@@ -8,8 +8,8 @@ from scipy.sparse import hstack
 @st.cache_resource
 def load_artifacts():
    model = joblib.load('models/lgb_model.pkl')
-vectorizer = joblib.load('models/tfidf_vectorizer.pkl')
-encoder = joblib.load('models/encoder.pkl')
+   vectorizer = joblib.load('models/tfidf_vectorizer.pkl')
+   encoder = joblib.load('models/encoder.pkl')
     return model, vectorizer, encoder
 
 model, vectorizer, encoder = load_artifacts()
