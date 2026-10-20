@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -45,7 +45,7 @@ if submit_button:
     predicted_price = np.expm1(log_pred)[0]
     
     st.success(f"Estimated Product Price: **${predicted_price:.2f}**")
-=======
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -92,5 +92,5 @@ if submit_button:
     predicted_price = np.expm1(log_pred)[0]
     
     st.success(f"Estimated Product Price: **${predicted_price:.2f}**")
->>>>>>> b85a5eaf5cdee25bdd89d0ae650397c585d3be0e
+
     
